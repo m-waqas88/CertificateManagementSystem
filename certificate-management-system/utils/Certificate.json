@@ -1,0 +1,118 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Certificate",
+  "sourceName": "contracts/Certificate.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_issuer",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "CertificateHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "CertificateIssued",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "CertificateHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "CertificateVerified",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "certificates",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_certificateHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "issueCertificate",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "issuer",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_certificateHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "verifyCertificate",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161029e38038061029e83398101604081905261002f91610054565b600080546001600160a01b0319166001600160a01b0392909216919091179055610084565b60006020828403121561006657600080fd5b81516001600160a01b038116811461007d57600080fd5b9392505050565b61020b806100936000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80631d14384814610051578063742f068814610081578063850c1768146100b4578063a1f81824146100c7575b600080fd5b600054610064906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100a461008f3660046101bc565b60016020526000908152604090205460ff1681565b6040519015158152602001610078565b6100a46100c23660046101bc565b6100da565b6100a46100d53660046101bc565b610104565b60008181526001602052604081205460ff1680156100fb5750600192915050565b50600092915050565b600080546001600160a01b031633146101715760405162461bcd60e51b815260206004820152602560248201527f4f6e6c79206973737565722063616e2069737375652074686520636572746966604482015264696361746560d81b606482015260840160405180910390fd5b6000828152600160208190526040808320805460ff19169092179091555183917f615fe29dd761acef07dabe50d28b02874372a0a63ee7fa4221480b34b7ac14ba91a2506001919050565b6000602082840312156101ce57600080fd5b503591905056fea2646970667358221220802145e9406c33bf272fb56974e89cb192154ea5b7adf9be96149dd71431989564736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80631d14384814610051578063742f068814610081578063850c1768146100b4578063a1f81824146100c7575b600080fd5b600054610064906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100a461008f3660046101bc565b60016020526000908152604090205460ff1681565b6040519015158152602001610078565b6100a46100c23660046101bc565b6100da565b6100a46100d53660046101bc565b610104565b60008181526001602052604081205460ff1680156100fb5750600192915050565b50600092915050565b600080546001600160a01b031633146101715760405162461bcd60e51b815260206004820152602560248201527f4f6e6c79206973737565722063616e2069737375652074686520636572746966604482015264696361746560d81b606482015260840160405180910390fd5b6000828152600160208190526040808320805460ff19169092179091555183917f615fe29dd761acef07dabe50d28b02874372a0a63ee7fa4221480b34b7ac14ba91a2506001919050565b6000602082840312156101ce57600080fd5b503591905056fea2646970667358221220802145e9406c33bf272fb56974e89cb192154ea5b7adf9be96149dd71431989564736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

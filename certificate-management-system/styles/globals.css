@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Classes */
+.disabled{
+    background-color: #edf0f3 !important;
+    color: black !important;
+}
